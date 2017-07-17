@@ -47,6 +47,8 @@ class RecordSoundsViewController: UIViewController {
         recordButton.isEnabled = true
         
         audioRecorder.stop()
+        let session = AVAudioSession.sharedInstance()
+        try! session.setActive(false)
     }
 }
 
