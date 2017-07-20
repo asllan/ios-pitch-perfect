@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -79,7 +80,23 @@
                     <view key="view" contentMode="scaleToFill" id="sLu-kd-JOb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pVm-8f-GHN">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SgY-hr-j30">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="603"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="oH6-N0-MHC" firstAttribute="top" secondItem="pVm-8f-GHN" secondAttribute="bottom" id="Wc7-RZ-YEH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pVm-8f-GHN" secondAttribute="trailing" id="ljI-D7-ZdS"/>
+                            <constraint firstItem="pVm-8f-GHN" firstAttribute="top" secondItem="hnp-xp-r8f" secondAttribute="bottom" id="qIm-NV-dHV"/>
+                            <constraint firstItem="pVm-8f-GHN" firstAttribute="leading" secondItem="sLu-kd-JOb" secondAttribute="leadingMargin" id="wya-0s-oFl"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tzt-gH-6We" userLabel="First Responder" sceneMemberID="firstResponder"/>
