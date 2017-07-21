@@ -5,7 +5,6 @@ This app is developed by using UIKit and AVFoundation.
 <table>
 <tr>
 <td><img src="/images/record-sound-view.png" alt="Screenshot of Pitch Perfect" height=600></td>
-<td></td>
 <td><img src="/images/play-sound-view.png" alt="Screenshot of Pitch Perfect" height=600></td>
 </tr>
 </table>
